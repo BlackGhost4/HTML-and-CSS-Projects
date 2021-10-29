@@ -1,0 +1,21 @@
+h1 {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px darkgray;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: lightgreen;
+    color: black;
+}

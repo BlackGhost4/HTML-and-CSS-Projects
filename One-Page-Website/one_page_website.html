@@ -3,13 +3,15 @@
     <head>
         <title>Day of the Dead</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="./css/shared.css">
+        <link rel="stylesheet" href="./css/animation.css">
     </head>
     <body>
         <h1>Visit Taxco in the Day of the Dead</h1>
         <!-- NAV -->
-        <div>
-            <div>
-                <ul>
+        <div class="wrap">
+            <div class="menu-container">
+                <ul class="menu">
                     <a href="#home" id="link"><li>HOME</li></a>
                     <a href="#gallery"><li>PHOTO GALLERY</li></a>
                     <a href="#videogallery"><li>VIDEO GALLERY</li></a>
@@ -21,33 +23,24 @@
         
         <!-- HOME -->
         <div id="home">
-            <h1>Home - A brief description of The Day of the Dead</h1>
-            <article>
-                <p>
-                    The Day of the Dead (Spanish: D&iacute;a de Muertos or D&iacute;a de los Muertos)[2][3] is a holiday celebrated from 31st October through 2nd of November inclusive, though other days, such as 6th November, may be included depending on the locality. It originated, in part, in Mexico, where it is mostly observed, but also in other places, especially by people of Mexican heritage elsewhere. Although associated with the Western Christian Allhallowtide observances of All Hallow's Eve, All Saints' Day and All Souls' Day, it has a much less solemn tone and is portrayed as a holiday of joyful celebration rather than mourning. The multi-day holiday involves family and friends gathering to pay respects and to remember friends and family members who have died. These celebrations can take a humorous tone, as celebrants remember funny events and anecdotes about the departed.
-                </p>
-            </article>
-            <details>
-                <summary>Click for more information</summary>
-                <p>
-                    Traditions connected with the holiday include honoring the deceased using calaveras and aztec marigold flowers known as cempaz&uacute;chitl, building home altars called ofrendas with the favorite foods and beverages of the departed, and visiting graves with these items as gifts for the deceased. The celebration is not solely focused on the dead, as it is also common to give gifts to friends such as candy sugar skulls, to share traditional pan de muerto with family and friends, and to write light-hearted and often irreverent verses in the form of mock epitaphs dedicated to living friends and acquaintances, a literary form known as calaveras literarias.<br><br>
-                    In 2008, the tradition was inscribed in the Representative List of the Intangible Cultural Heritage of Humanity by UNESCO.
-                </p>
-            </details>
+            <div class="container">
+                <div class="text-center">
+                    <span class="head-main">The Day of the Dead</span>
+                </div>
+            </div>
         </div>
         <!-- END HOME -->
         
         <!-- PHOTO GALLERY -->
-        <section>
-            <div id="gallery">
+        <section id="gallery">
+            <div class="container">
                 <h1>Photo Gallery</h1>
-                <div>
-                    
+                <div class="flex-container">
                     <!-- PHOTO-CONTAINER 1 -->
-                    <div>
-                        <div>
-                            <img src="images/Thumb/thumbnail_1.jpg" alt="Taxco opciones para celebrar d&iacute;a de muertos" width="450" height="300">
-                            <div>
+                    <div class="photo-container">
+                        <div class="photo">
+                            <img src="images/Thumb/thumbnail_1.jpg" alt="Taxco opciones para celebrar d&iacute;a de muertos">
+                            <div class="photo-overlay">
                                 <h3>Click to Enlarge</h3>
                                 <p>We have several space launches departing daily, book your flight today!</p>
                             </div>
@@ -56,10 +49,10 @@
                     <!-- END PHOTO-CONTAINER 1 -->
                     
                     <!-- PHOTO-CONTAINER 2 -->
-                    <div>
-                        <div>
-                            <img src="images/Thumb/thumbnail_2.jpg" alt="Sobre la catrina monumental que adorna Taxco" width="450" height="300">
-                            <div>
+                    <div class="photo-container">
+                        <div class="photo">
+                            <img src="images/Thumb/thumbnail_2.jpg" alt="Sobre la catrina monumental que adorna Taxco">
+                            <div class="photo-overlay">
                                 <h3>Click to Enlarge</h3>
                                 <p>We have several space launches departing daily, book your flight today!</p>
                             </div>
@@ -68,10 +61,10 @@
                     <!-- END PHOTO-CONTAINER 2 -->
                     
                     <!-- PHOTO-CONTAINER 3 -->
-                    <div>
-                        <div>
-                            <img src="images/Thumb/thumbnail_3.jpg" alt="Calendario festivo" width="450" height="300">
-                            <div>
+                    <div class="photo-container">
+                        <div class="photo">
+                            <img src="images/Thumb/thumbnail_3.jpg" alt="Calendario festivo">
+                            <div class="photo-overlay">
                                 <h3>Click to Enlarge</h3>
                                 <p>We have several space launches departing daily, book your flight today!</p>
                             </div>
@@ -80,10 +73,10 @@
                     <!-- END PHOTO-CONTAINER 3 -->
                     
                     <!-- PHOTO-CONTAINER 4 -->
-                    <div>
-                        <div>
-                            <img src="images/Thumb/thumbnail_4.jpg" alt="Catrina" width="450" height="300">
-                            <div>
+                    <div class="photo-container">
+                        <div class="photo">
+                            <img src="images/Thumb/thumbnail_4.jpg" alt="Catrina">
+                            <div class="photo-overlay">
                                 <h3>Click to Enlarge</h3>
                                 <p>We have several space launches departing daily, book your flight today!</p>
                             </div>
@@ -92,10 +85,10 @@
                     <!-- END PHOTO-CONTAINER 4 -->
                     
                     <!-- PHOTO-CONTAINER 5 -->
-                    <div>
-                        <div>
-                            <img src="images/Thumb/thumbnail_5.jpg" alt="Catrina" width="450" height="300">
-                            <div>
+                    <div class="photo-container">
+                        <div class="photo">
+                            <img src="images/Thumb/thumbnail_5.jpg" alt="Catrina">
+                            <div class="photo-overlay">
                                 <h3>Click to Enlarge</h3>
                                 <p>We have several space launches departing daily, book your flight today!</p>
                             </div>
@@ -104,10 +97,10 @@
                     <!-- END PHOTO-CONTAINER 5 -->
                     
                     <!-- PHOTO-CONTAINER 6 -->
-                    <div>
-                        <div>
-                            <img src="images/Thumb/thumbnail_6.jpg" alt="Dia de muertos" width="450" height="300">
-                            <div>
+                    <div class="photo-container">
+                        <div class="photo">
+                            <img src="images/Thumb/thumbnail_6.jpg" alt="Dia de muertos">
+                            <div class="photo-overlay">
                                 <h3>Click to Enlarge</h3>
                                 <p>We have several space launches departing daily, book your flight today!</p>
                             </div>
@@ -116,10 +109,10 @@
                     <!-- END PHOTO-CONTAINER 6 -->
                     
                     <!-- PHOTO-CONTAINER 7 -->
-                    <div>
-                        <div>
-                            <img src="images/Thumb/thumbnail_7.jpg" alt="Festival de las lloronas" width="450" height="300">
-                            <div>
+                    <div class="photo-container">
+                        <div class="photo">
+                            <img src="images/Thumb/thumbnail_7.jpg" alt="Festival de las lloronas">
+                            <div class="photo-overlay">
                                 <h3>Click to Enlarge</h3>
                                 <p>We have several space launches departing daily, book your flight today!</p>
                             </div>
@@ -128,10 +121,10 @@
                     <!-- END PHOTO-CONTAINER 7 -->
                     
                     <!-- PHOTO-CONTAINER 8 -->
-                    <div>
-                        <div>
-                            <img src="images/Thumb/thumbnail_8.jpg" alt="Iglesia de Taxco" width="450" height="300">
-                            <div>
+                    <div class="photo-container">
+                        <div class="photo">
+                            <img src="images/Thumb/thumbnail_8.jpg" alt="Iglesia de Taxco">
+                            <div class="photo-overlay">
                                 <h3>Click to Enlarge</h3>
                                 <p>We have several space launches departing daily, book your flight today!</p>
                             </div>
@@ -140,10 +133,10 @@
                     <!-- END PHOTO-CONTAINER 8 -->
                     
                     <!-- PHOTO-CONTAINER 9 -->
-                    <div>
-                        <div>
-                            <img src="images/Thumb/thumbnail_9.jpg" alt="Representaciones" width="450" height="300">
-                            <div>
+                    <div class="photo-container">
+                        <div class="photo">
+                            <img src="images/Thumb/thumbnail_9.jpg" alt="Representaciones">
+                            <div class="photo-overlay">
                                 <h3>Click to Enlarge</h3>
                                 <p>We have several space launches departing daily, book your flight today!</p>
                             </div>
@@ -160,29 +153,37 @@
         <section>
             <div id="videogallery">
                 <h1>Video Gallery</h1>
-                <div>
+                <div class="flex-container">
                     
                     <!-- VIDEO CONTAINER 1 -->
-                    <div>
-                        <iframe width="420" height="315" src="https://www.youtube.com/embed/6d9Mwmd0bJA"></iframe>
-                    </div>
+                    <div class="photo-container">
+                        <div class="photo">
+                            <iframe width="420" height="315" src="https://www.youtube.com/embed/6d9Mwmd0bJA"></iframe>
+                        </div>
+                    </div>                       
                     <!-- END VIDEO CONTAINER 1 -->
                     
                     <!-- VIDEO CONTAINER 2 -->
-                    <div>
-                        <iframe width="420" height="315" src="https://www.youtube.com/embed/jagwF-EtVO8"></iframe>
-                    </div>
+                    <div class="photo-container">
+                        <div class="photo">
+                            <iframe width="420" height="315" src="https://www.youtube.com/embed/jagwF-EtVO8"></iframe>
+                        </div>
+                    </div>   
                     <!-- END VIDEO CONTAINER 2 -->
                     
                     <!-- VIDEO CONTAINER 3 -->
-                    <div>
-                        <iframe width="420" height="315" src="https://www.youtube.com/embed/6d9Mwmd0bJA"></iframe>
+                    <div class="photo-container">
+                        <div class="photo">
+                            <iframe width="420" height="315" src="https://www.youtube.com/embed/6d9Mwmd0bJA"></iframe>
+                        </div>
                     </div>
                     <!-- END VIDEO CONTAINER 3 -->
                     
                     <!-- VIDEO CONTAINER 4 -->
-                    <div>
-                        <iframe width="420" height="315" src="https://www.youtube.com/embed/WEWBPrvzobk"></iframe>
+                    <div class="photo-container">
+                        <div class="photo">
+                            <iframe width="420" height="315" src="https://www.youtube.com/embed/WEWBPrvzobk"></iframe>
+                        </div>
                     </div>
                     <!-- END VIDEO CONTAINER 4 -->
                 </div>
@@ -191,27 +192,28 @@
         <!-- END VIDEO GALLERY -->
         
         <!-- RSVP -->
-        <section>
-            <div id="contact">
-                <div>
-                    <h1>Reservations</h1>
-                    <div>
+        <section id="contact">
+            <div class="container">
+                <div class="heading-padding">
+                    <h1 class="heading-padding">Reservations</h1>
+                    <div class="reservation">
                         <h2>
-                            <span>Your adventure is just around the moon.</span><br />Reserve your flight today!
+                            <span>Your adventure is just around the city.</span><br />
+                            Reserve your trip today!
                         </h2>
-                        <p>
+                        <p class="rsvp-text">
                             Please provide us with your basic contact information.
                         </p>
-                        <div>
+                        <div class="form-rsvp">
                             <form action="" method="post">
-                                <input class="rsvp" type="text" value="First Name">
-                                <input class="rsvp" type="text" value="Last Name">
-                                <input class="rsvp" type="text" value="Email Address">
-                                <input class="rsvp" type="text" value="Phone Number">
+                                <input class="rsvp" type="text" value="" placeholder="First Name">
+                                <input class="rsvp" type="text" value="" placeholder="Last Name">
+                                <input class="rsvp" type="text" value="" placeholder="Email Address">
+                                <input class="rsvp" type="text" value="" placeholder="Phone Number">
                                 <div class="form-spacer">
                                     <label class="terms">Terms and Conditions</label>
                                 </div>
-                                <div>
+                                <div class="submit">
                                     <input type="submit" value="Submit">
                                 </div>
                             </form>
@@ -225,17 +227,15 @@
         <br>
         
         <!-- FOOTER -->
-        <footer>
-            <div>
-                <em>Engels Molina &nbsp;|&nbsp; &copy; 2021</em>
-                <p>
-                    This information is updated daily at <time>06:00</time>.
-                </p>
-                <p>
-                    Add to your calendar <time datetime="2021-11-01 10:00">The Day of the Dead</time>.
-                </p>
-            </div>
-        </footer>
+        <div id="footer">
+            <em>Engels Molina &nbsp;|&nbsp; &copy; 2021</em>
+            <p>
+                This information is updated daily at <time>06:00</time>.
+            </p>
+            <p>
+                Add to your calendar <time datetime="2021-11-01 10:00">The Day of the Dead</time>.
+            </p>
+        </div>
         <!-- END FOOTER -->
     </body>
 </html>

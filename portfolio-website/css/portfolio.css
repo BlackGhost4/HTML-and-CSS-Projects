@@ -1,4 +1,13 @@
 /***** GENERAL STYLING *****/
+@font-face {
+    font-family: Computerfont;
+    src: url(fonts/Computerfont.ttf);
+}
+
+@font-face {
+    font-family: Techfont;
+    src: url(fonts/Techfont.ttf);
+}
 /* Body */
 body {
     margin: 0%  /* This ensures our site displays all the way to the edge of the browser screen */
@@ -6,8 +15,8 @@ body {
 
 /* Heading 1 elements */
 h1 {
-    text-transform: uppercase; /* Capitalizing all h1 headings */
-    font-family: "Trebuchet MS", Optima; /* Sets the font family of all h1 headings */
+    /*text-transform: uppercase; /* Capitalizing all h1 headings */
+    /*font-family: "Trebuchet MS", Optima; /* Sets the font family of all h1 headings */
     text-align: center; /* Centering all h1 elements */
     margin-top: 3%; /* Adds a small margin above h1 elements */
     color: #1a1a1a; 
@@ -20,6 +29,17 @@ h1:hover {
     transition: transform 1s; /* This causes the transformation to last 1 second */
 }
 
+.title-font {
+    font-family: Techfont;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.subtitle-font {
+    font-family: Techfont;
+    font-weight: bold;
+}
+
 /* Styling for portfolio title text */
 .white-text {
     color: #fff; /* This is used to change the color of the portfolio title text */
@@ -27,7 +47,7 @@ h1:hover {
 
 /* Paragraph elements */
 p {
-    font-family: Perpetua, Rockwell Extra Bold;
+    font-family: Techfont;
     text-align: justify; /* Justify text within paragraph elements */
     letter-spacing: 1px; /* This expands the text slightly */
     font-size: 20px;
@@ -99,13 +119,14 @@ footer {
 /***** NAVBAR STYLING *****/
 .Navbar {
     overflow: hidden; /* This ensures that any content that overflows beyond the boundary of our nav bar is not displayed */
-    background-color: black; /* This colors the navbar black */
+    background-color: #3803f7; /* This colors the navbar black */
     position: fixed; /* This keeps the navbar at the top of the screen as we scroll */
     top: 0; /* This ensures no space is displayed above the navbar */
     width: 100%; /* This makes the navbar span the entire width of the page */
     z-index: 1; /* This ensures other elements don't display over the navbar */
     -webkit-animation: moveNav 5s; /* This applies the moveNav animation below for Safari 4.0 - 8.0 */
     animation: moveNav 5s; /* This applies the moveNav animation for all other browsers */
+    font-family: Computerfont;
 }
 
 /* moveNav animation effect for moving the nav bar in from the left of the screen */
@@ -121,7 +142,7 @@ footer {
     color: white; /* This is the font color for text on our navbar */
     padding: 14px 16px; /* This adds padding around our text */
     text-decoration: none; /* This gets rid of the underlines under the text on our navbar */
-    font-family: Avant Garde, Helvetica; /* This specifies the font family for text on our navbar */
+    /*font-family: Avant Garde, Helvetica; /* This specifies the font family for text on our navbar */
     font-size: 20px; /* This specifies the font size for text on our navbar */
     text-align: center; /* This centers the text within its container */
     position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
@@ -152,7 +173,7 @@ footer {
 
 /* Navbar home button */
 .Navbar a.active { /* This targets the a element on the navbar with the "active" class */
-    background-color: darkgray;
+    background-color: #2d00a8;
 }
 /***** END OF NAVBAR STYLING *****/
 
@@ -199,10 +220,10 @@ footer {
 .Column_1 {
     float: left;
     width: 50%; /* This ensures the column takes up half of the page width */
-    padding: 10px;
-    padding-top: 3%; /* This ensures there is space between the top of the column and our headings */
+    padding: 5px;
+    padding-top: 2%; /* This ensures there is space between the top of the column and our headings */
     height: 400px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
-    background-color: #f2f2f2; /* Sets the background color of the columns with class Column_1 */
+    background-color: #dbffff; /* Sets the background color of the columns with class Column_1 */
 }
 
 /* Screens 576px and smaller will display a scroll bar if the text overflows the column height */
@@ -218,7 +239,7 @@ footer {
     padding: 10px;
     padding-top: 1.9%;
     height: 400px;
-    background-color: #4d4d4d;
+    background-color: #81bdf5;
 }
 
 /* This class is applied to the columns in the final row, overriding the height and padding to provide more room for the contact form  while keeping the rest of the formatting from Column_1 or Column_2 */
@@ -246,7 +267,8 @@ input[type=text] {
     margin-top: 6px; /* Adds a margin to the top of the text box */
     margin-bottom: 16px; /* Adds a margin to the bottom of the text box */
     resize: vertical; /* This allows the user to resize the text boxes vertically */
-    font-family: Perpetua, Rockwell Extra Bold;
+    font-family: Techfont;
+    font-weight: bold;
 }
 
 /* Hover effects for input boxes */
@@ -266,13 +288,15 @@ input[type=submit] {
     display: block; /* Allows the submit button to be centered */
     margin-left: auto; /* In combination with "margin-right: auto" this will center the submit button */
     margin-right: auto;
-    font-family: Perpetua, Rockwell Extra Bold;
+    font-family: Techfont;
+    font-weight: bold;
+    letter-spacing: 5px;
 }
 
 /* Hover effect for submit button */
 input[type=submit]:hover {
-    background-color: white; /* Turns the background of the submit button white when the user hovers over it */
-    color: black; /* Turns the font black when hovered over */
+    background-color: darkblue /* Turns the background of the submit button white when the user hovers over it */
+    color: white; /* Turns the font black when hovered over */
     transform: scale(1.5); /* Makes the button increase 1.5 times in size */
     transition: transform 1.5s; /* Makes the transform effect last 1.5 seconds */
 }
@@ -280,8 +304,8 @@ input[type=submit]:hover {
 /* Form element */
 form {
     border-radius: 5px; /* Rounds the corners of the contact form */
-    background-color: #f2f2f2; 
+    background-color: #dbffff;
     padding: 10px; /* Adds padding to the contact form */
-    font-family: "Trebuchet MS", Optima;
+    font-family: Techfont;
 }
 /***** END OF CONTACT FORM STYLING *****/
